@@ -55,6 +55,13 @@
       "price": "88",
       "image": null,
       "id": 8
+    },
+    {
+      "title": "por fin",
+      "description": "vaya tela",
+      "price": "5",
+      "image": null,
+      "id": 9
     }
   ]
 }

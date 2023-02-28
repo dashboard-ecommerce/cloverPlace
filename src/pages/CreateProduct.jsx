@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { productHandler } from '../handlers/productHandler';
+import { Link } from 'react-router-dom';
 
 const CreateProduct = () => {
     const [title, setTitle] = useState("");
@@ -45,9 +46,11 @@ const CreateProduct = () => {
             <input name="description" type="text" onChange={handleDescriptionChange} />
             <label htmlFor="price">Price</label>
             <input name="price" type="text" onChange={handlePriceChange}/>
+            <Link className="edit--link" to={`/products`}>
             <button type="submit">
                 Upload
             </button>
+            </Link>
         </form>
     );
 };
