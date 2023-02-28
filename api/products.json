@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "title": "Test Product 1",
+      "description": "This is a test product",
+      "price": 5.99,
+      "image": "http://example.com/product1.jpg",
+      "id": 1
+    },
+    {
+      "title": "Test Product 2",
+      "description": "This is a test product",
+      "price": 9.99,
+      "image": "http://example.com/product2.jpg",
+      "id": 2
+    },
+    {
+      "title": "prueba 2",
+      "description": "q bonito 82",
+      "price": "10",
+      "image": null,
+      "id": 3
+    },
+    {
+      "title": "horror 1",
+      "description": "miedo",
+      "price": "40",
+      "image": null,
+      "id": 4
+    },
+    {
+      "title": "funcionaYa",
+      "description": "pro favor",
+      "price": "50",
+      "image": null,
+      "id": 5
+    },
+    {
+      "title": "work",
+      "description": "q bonito 88",
+      "price": "88",
+      "image": null,
+      "id": 6
+    },
+    {
+      "title": "work",
+      "description": "q bonito 88",
+      "price": "88",
+      "image": null,
+      "id": 7
+    },
+    {
+      "title": "work hard",
+      "description": "q bonito 88",
+      "price": "88",
+      "image": null,
+      "id": 8
+    }
+  ]
+}
