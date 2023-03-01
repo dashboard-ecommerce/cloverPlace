@@ -1,4 +1,50 @@
 import "./Product.css";
+/* import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit'; */
+import { Link } from 'react-router-dom';
+import CardGroup from 'react-bootstrap/CardGroup';
+import Card from 'react-bootstrap/Card';
+import { Container } from "@mui/system";
+
+
+
+function Product({ product, deleteProduct }) {
+
+    const { id, title, price, image, description } = product;
+
+    return (
+        <Container>
+      
+        <Card>
+        <Card.Img variant="top" src={image} />
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{price}</Card.Text>
+          <Card.Text>
+            {description}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>  
+     
+      </Container>
+    )
+}
+
+export default Product 
+
+
+
+
+/* import "./Product.css";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,12 +54,16 @@ import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { Link } from 'react-router-dom';
+import CardGroup from 'react-bootstrap/CardGroup';
+
 
 function Product({ product, deleteProduct }) {
 
     const { id, title, price, image } = product;
 
     return (
+        <CardGroup>
+             <Card>
         <Card sx={{ maxWidth: 345 }}>
             <CardMedia
                 sx={{ height: 140 }}
@@ -37,7 +87,9 @@ function Product({ product, deleteProduct }) {
                 </Link>
             </CardActions>
         </Card>
+        </Card>
+        </CardGroup>
     )
 }
 
-export default Product
+export default Product */

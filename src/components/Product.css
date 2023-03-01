@@ -1,4 +1,4 @@
-.productCard {
+ .productCard {
     width: 25rem;
     height: 20rem;
     margin: 1rem;
@@ -28,7 +28,7 @@
     width: 50%;
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .edit--link {
     text-decoration: none;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { productHandler } from './handlers/productHandler';
 import Product from './components/Product'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css'
 

@@ -3,6 +3,9 @@ import { useState } from "react";
 import { productHandler } from "../handlers/productHandler";
 import Product from '../components/Product'
 import './Dashboard.css'
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 function Dashboard() {
     const { products } = useLoaderData();
@@ -15,9 +18,15 @@ function Dashboard() {
 
     return (
         <>
+         <Row xs={1} md={4} className="g-4">
+         
         {productsData.map((product) => (
+          <Col>
             <Product key={product.id} product={product} deleteProduct={deleteProduct} />
+            </Col>
         ))}
+         
+        </Row>
       </>
     )
 }
