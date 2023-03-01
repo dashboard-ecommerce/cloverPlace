@@ -3,7 +3,7 @@ import { useState } from "react";
 import { productHandler } from "../handlers/productHandler";
 import Product from '../components/Product'
 import './Dashboard.css'
-import Card from 'react-bootstrap/Card';
+
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 

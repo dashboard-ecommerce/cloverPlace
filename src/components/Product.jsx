@@ -14,6 +14,7 @@ import { Container } from "@mui/system";
 
 
 
+
 function Product({ product, deleteProduct }) {
 
     const { id, title, price, image, description } = product;
@@ -31,7 +32,11 @@ function Product({ product, deleteProduct }) {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+        <Card.Text>
+        <Link href="/products/${product.id}">View</Link>
+        </Card.Text>
+        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>Edit</Link>
+        <Card.Link href="#" onClick={() => deleteProduct(id)}>Delete</Card.Link>
         </Card.Footer>
       </Card>  
      
