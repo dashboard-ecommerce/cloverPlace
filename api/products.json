@@ -1,67 +1,151 @@
 {
   "products": [
     {
-      "title": "Test Product 1",
-      "description": "This is a test product",
-      "price": 5.99,
-      "image": "http://example.com/product1.jpg",
+      "title": "PC reac.",
+      "description": "Portatil reacondicionado",
+      "price": "29,99",
+      "image": "https://cdn.pixabay.com/photo/2016/06/28/05/10/laptop-1483974_1280.jpg",
       "id": 1
     },
     {
-      "title": "Test Product 2",
-      "description": "This is a test product",
-      "price": 9.99,
-      "image": "http://example.com/product2.jpg",
+      "title": "Portatil",
+      "description": "Portatil reacondicionado de 2021",
+      "price": "59,99",
+      "image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_1280.jpg",
       "id": 2
     },
     {
-      "title": "prueba 2",
-      "description": "q bonito 82",
-      "price": "10",
-      "image": null,
+      "title": "Ordenador",
+      "description": "Ordenador sobremesa reacondicionado",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2015/06/24/16/36/home-820389_1280.jpg",
       "id": 3
     },
     {
-      "title": "horror 1",
-      "description": "miedo",
-      "price": "40",
-      "image": null,
+      "title": "Pc",
+      "description": "Portatil reacondicionado 2020",
+      "price": "29,99",
+      "image": "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_1280.jpg",
       "id": 4
     },
     {
-      "title": "funcionaYa",
-      "description": "pro favor",
-      "price": "50",
-      "image": null,
+      "title": "Oficina Pc",
+      "description": "Pantalla,portatil,teclado,etc",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/06/18/home-office-1867761_1280.jpg",
       "id": 5
     },
     {
-      "title": "work",
-      "description": "q bonito 88",
-      "price": "88",
-      "image": null,
+      "title": "Portatil",
+      "description": "Reacondicionado 2020",
+      "price": "49,99",
+      "image": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_1280.jpg",
       "id": 6
     },
     {
-      "title": "work",
-      "description": "q bonito 88",
-      "price": "88",
-      "image": null,
+      "title": "AllinOne",
+      "description": "PC reacondicinado 2019",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2016/08/05/10/18/pc-1571963_640.jpg",
       "id": 7
     },
     {
-      "title": "work hard",
-      "description": "q bonito 88",
-      "price": "88",
-      "image": null,
+      "title": "PC",
+      "description": "Portatil reacondicionado",
+      "price": "29,99",
+      "image": "https://cdn.pixabay.com/photo/2016/06/28/05/10/laptop-1483974_1280.jpg",
       "id": 8
     },
     {
-      "title": "por fin",
-      "description": "vaya tela",
-      "price": "5",
-      "image": null,
+      "title": "Portatil",
+      "description": "Portatil reacondicionado de 2021",
+      "price": "59,99",
+      "image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_1280.jpg",
       "id": 9
+    },
+    {
+      "title": "Ordenador",
+      "description": "Ordenador sobremesa reacondicionado",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2015/06/24/16/36/home-820389_1280.jpg",
+      "id": 10
+    },
+    {
+      "title": "Pc",
+      "description": "Portatil reacondicionado 2020",
+      "price": "29,99",
+      "image": "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_1280.jpg",
+      "id": 11
+    },
+    {
+      "title": "Oficina Pc",
+      "description": "Pantalla,portatil,teclado,etc",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/06/18/home-office-1867761_1280.jpg",
+      "id": 12
+    },
+    {
+      "title": "Portatil",
+      "description": "Reacondicionado 2020",
+      "price": "49,99",
+      "image": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_1280.jpg",
+      "id": 13
+    },
+    {
+      "title": "AllinOne",
+      "description": "PC reacondicinado 2019",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2016/08/05/10/18/pc-1571963_640.jpg",
+      "id": 14
+    },
+    {
+      "title": "PC",
+      "description": "Portatil reacondicionado",
+      "price": "29,99",
+      "image": "https://cdn.pixabay.com/photo/2016/06/28/05/10/laptop-1483974_1280.jpg",
+      "id": 15
+    },
+    {
+      "title": "Portatil",
+      "description": "Portatil reacondicionado de 2021",
+      "price": "59,99",
+      "image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_1280.jpg",
+      "id": 16
+    },
+    {
+      "title": "Ordenador",
+      "description": "Ordenador sobremesa reacondicionado",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2015/06/24/16/36/home-820389_1280.jpg",
+      "id": 17
+    },
+    {
+      "title": "Pc",
+      "description": "Portatil reacondicionado 2020",
+      "price": "29,99",
+      "image": "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_1280.jpg",
+      "id": 18
+    },
+    {
+      "title": "Oficina Pc",
+      "description": "Pantalla,portatil,teclado,etc",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/06/18/home-office-1867761_1280.jpg",
+      "id": 19
+    },
+    {
+      "title": "Portatil",
+      "description": "Reacondicionado 2020",
+      "price": "49,99",
+      "image": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_1280.jpg",
+      "id": 20
+    },
+    {
+      "title": "All in One",
+      "description": "PC reacondicinado 2019",
+      "price": "99,99",
+      "image": "https://cdn.pixabay.com/photo/2016/08/05/10/18/pc-1571963_640.jpg",
+      "id": 21
     }
   ]
 }

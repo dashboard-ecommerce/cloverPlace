@@ -12,7 +12,7 @@ function ProductInfo() {
     let { title, description, price, image } = product;
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 140 }}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={image}
