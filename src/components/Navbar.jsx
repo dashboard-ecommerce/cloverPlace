@@ -6,7 +6,7 @@ import "./Navbar.css";
 function NavBar() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" >
+      <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home" >Clover Place</Navbar.Brand>
           <Nav className="m-3 gap-5 fst-normal me-5">

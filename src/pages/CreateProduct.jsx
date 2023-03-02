@@ -1,8 +1,8 @@
-import { useState } from 'react';
+/* import { useState } from 'react';
 import { productHandler } from '../handlers/productHandler';
-import { NavLink } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import { Grid } from '@mui/material';
 
 const CreateProduct = () => {
     const [title, setTitle] = useState("");
@@ -39,28 +39,46 @@ const CreateProduct = () => {
     };
 
     return (
+       
         
-        <form onSubmit={handleSubmit}>
+           
+             <Box md={{ flexGrow: 2 }}> 
+             <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12,}}>
+             <Container maxWidth="sm" >
+            <form onSubmit={handleSubmit}>
+        
+            <Grid item xs={2} sm={4} md={4}>
             <label htmlFor="image">Image</label>
             <input type="file" onChange={handleImageChange} />
+            </Grid>
+             <Grid item xs={2} sm={4} md={4}>
             <label htmlFor="title">Title</label>
             <input name="title" type="text" onChange={handleTitleChange} />
+            </Grid>
+             <Grid itemxs={2} sm={4} md={4}>
             <label htmlFor="description">Description</label>
             <input name="description" type="text" onChange={handleDescriptionChange} />
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
             <label htmlFor="price">Price</label>
             <input name="price" type="text" onChange={handlePriceChange}/>
+            </Grid>
              
             <button type="submit">
                 Upload
             </button>
-         
+           
         </form>
+        </Container>
+       </Grid>
+       </Box>
        
+        
     );
 };
 
 export default CreateProduct;
-
+ */
 
 
 
@@ -126,7 +144,7 @@ export default CreateProduct;
  */
 
 
-/* import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import { productHandler } from '../handlers/productHandler';
@@ -169,27 +187,29 @@ function CreateProduct() {
     };
 
   return (
+    
+
     <Container>
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="title">
         <Form.Label>Title</Form.Label>
-        <Form.Control type="title" placeholder="Enter title" onChange={handleTitleChange}/>
+        <Form.Control type="text" placeholder="Enter title" name="title" onChange={handleTitleChange}/>
        
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="description">
         <Form.Label>Description</Form.Label>
-        <Form.Control type="description" placeholder="Description" onChange={handleDescriptionChange} />
+        <Form.Control type="text" placeholder="Description" name="description" onChange={handleDescriptionChange} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="price">
         <Form.Label>price</Form.Label>
-        <Form.Control type="price" placeholder="Price" onChange={handlePriceChange}/>
+        <Form.Control type="text" placeholder="Price" name="price"  onChange={handlePriceChange}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="image">
       <Form.Label htmlFor="image">Image</Form.Label>
             <input type="file" onChange={handleImageChange} />
         </Form.Group>"
-      <Link className="edit--link" to={`/products`}>
+      <Link className="mb-3" to={`/products`}>
       <Button variant="primary" type="submit">
         Upload
       </Button>
@@ -199,7 +219,7 @@ function CreateProduct() {
   );
 }
 
-export default CreateProduct; */
+export default CreateProduct; 
 
 
 
