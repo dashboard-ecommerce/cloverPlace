@@ -22,7 +22,7 @@ function Product({ product, deleteProduct }) {
     return (
         <Container>
       
-        <Card className="mt-5 " border="solid">
+        <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={image}/>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
@@ -32,10 +32,12 @@ function Product({ product, deleteProduct }) {
 
         <Card.Body>
         <Card.Text align="center">
-        <Link href="/products/${product.id}" to={`/products/${product.id}`}>View</Link>
+        <Link href="/products/${product.id}" to={`/products/${product.id}`}>👁️‍🗨️View</Link>
         </Card.Text>
-        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>Edit</Link>
-        <Link href="#" onClick={() => deleteProduct(id)}>Delete</Link>
+        
+        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>✏️</Link>
+     
+        <Link href="#" onClick={() => deleteProduct(id)}>🗑️</Link>
         </Card.Body>
       </Card>  
      

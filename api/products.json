@@ -8,13 +8,6 @@
       "id": 1
     },
     {
-      "title": "Portatil",
-      "description": "Portatil reacondicionado de 2021",
-      "price": "59,99",
-      "image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_1280.jpg",
-      "id": 2
-    },
-    {
       "title": "Pc",
       "description": "Portatil reacondicionado 2020",
       "price": "29,99",
