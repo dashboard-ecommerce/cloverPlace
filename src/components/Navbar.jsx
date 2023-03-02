@@ -6,9 +6,9 @@ import "./Navbar.css";
 function NavBar() {
   return (
     <>
-      <Navbar className="navbar--custom">
-        <Container className="navbar--custom--container">
-          <Navbar.Brand href="#home">Clover Place</Navbar.Brand>
+      <Navbar bg="dark" variant="dark" >
+        <Container>
+          <Navbar.Brand href="#home" >Clover Place</Navbar.Brand>
           <Nav className="m-3 gap-5 fst-normal me-5">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/">Products</Nav.Link>
