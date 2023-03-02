@@ -18,12 +18,12 @@ function Dashboard() {
 
     return (
         <>
-         <Row xs={1} md={3} className="g-4">
+         <Row xs={1} md={4} className="g-2">
          
         {productsData.map((product) => (
-          <Col>
+          <Col  className="g-2">
             <Product key={product.id} product={product} deleteProduct={deleteProduct} />
-            </Col>
+          </Col>
         ))}
          
         </Row>
