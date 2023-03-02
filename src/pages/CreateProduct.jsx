@@ -39,6 +39,7 @@ const CreateProduct = () => {
     };
 
     return (
+        
         <form onSubmit={handleSubmit}>
             <label htmlFor="image">Image</label>
             <input type="file" onChange={handleImageChange} />
@@ -54,6 +55,7 @@ const CreateProduct = () => {
             </button>
          
         </form>
+       
     );
 };
 

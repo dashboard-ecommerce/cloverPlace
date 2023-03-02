@@ -12,9 +12,10 @@ function ProductInfo() {
     let { title, description, price, image } = product;
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card className="position-absolute top-50 start-50 translate-middle" sx={{ maxWidth: 345 }}>
             <CardMedia
                 sx={{ height: 140 }}
+
                 image={image}
                 title={title}
             />

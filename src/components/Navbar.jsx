@@ -8,9 +8,9 @@ function NavBar() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Clover Place</Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="m-3 gap-5 fst-normal me-5">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/">My Products</Nav.Link>
+            <Nav.Link href="/">Products</Nav.Link>
             <Nav.Link href="/newProduct">Add Product</Nav.Link>
           </Nav>
         </Container>
