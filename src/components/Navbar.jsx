@@ -5,10 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" >
         <Container>
-          <Navbar.Brand href="#home">Clover Place</Navbar.Brand>
-          <Nav className="m-3 gap-5 fst-normal me-5">
+          <Navbar.Brand href="#home" >Clover Place</Navbar.Brand>
+          <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/">Products</Nav.Link>
             <Nav.Link href="/newProduct">Add Product</Nav.Link>
