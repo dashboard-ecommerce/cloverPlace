@@ -8,27 +8,25 @@ import "./Navbar.css";
 
 function NavBar() {
   return (
-    <Navbar className="navbar--custom" expand="lg">
+    <Navbar className="navbar--custom" expand="lg" variant='dark'>
       <Container fluid>
-      <Navbar.Brand>Clover Place</Navbar.Brand>
+      <Navbar.Brand className="ms-5">Clover Place</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-            >
-          <Nav.Link href="/">Products</Nav.Link>
-          <Nav.Link href="/newProduct">Add Product</Nav.Link> 
+          <Nav className="col justify-content-xl-around">
+            
+          <Nav.Link href="/" >Products</Nav.Link>
+          <Nav.Link href="/newProduct">Add Product</Nav.Link>    
           </Nav>  
-          <Form className="d-flex">
+          <Form className="form d-flex me-5 ">
             <Form.Control
               type="search"
-              placeholder="Search"
-              className="me-2"
+              placeholder="Search..."
+              className="me-4 "
               aria-label="Search"
+              autoComplete="off"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button type="button" className="btn btn-success" /* variant="outline-light" */>Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
@@ -36,7 +34,11 @@ function NavBar() {
   );
 }
 
-export default NavBar;  
+export default NavBar; 
+            
+            
+         
+           
           
           
 

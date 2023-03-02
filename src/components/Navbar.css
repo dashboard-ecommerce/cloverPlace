@@ -1,4 +1,17 @@
 .navbar--custom{
-  background-color: aqua;
+  background-color:#71ad71;
+  
+}
+.nav-link{
 }
 
+.nav-link:hover,
+.dropdown-item:hover {
+  font-weight: bold;
+  background-color:rgb(43, 147, 43);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.button.btn.btn-primary {
+  background-color: #71ad71;
+}
