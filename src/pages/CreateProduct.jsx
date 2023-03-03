@@ -217,7 +217,7 @@ function CreateProduct() {
                 <Form.Group className="mb-3" controlId="image">
                     <Form.Label >Image</Form.Label>
                     <input type="file" /* value={file} */ onChange={handleImageChange} />
-                </Form.Group>"
+                </Form.Group>
 
                
 
