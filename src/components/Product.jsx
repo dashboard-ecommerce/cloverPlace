@@ -11,12 +11,7 @@ import { Link } from 'react-router-dom';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import { Container } from "@mui/system";
-<<<<<<< HEAD
 import { FaBeer } from "react-icons/fa";
-=======
-import { IconName } from "react-icons/bs";
-import FcEmptyTrash "@react-icons/all-files/fa/FcEmptyTrash";
->>>>>>> f496f4628f92300d4476734b0e7bb67cffe89156
 
 
 
