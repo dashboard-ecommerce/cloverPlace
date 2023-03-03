@@ -18,7 +18,7 @@ function Dashboard() {
 
     return (
         <>
-         <Row xs={1} md={4} className="g-2">
+         <Row xs={1} md={4} className="g-4">
          
         {productsData.map((product) => (
           <Col  className="g-2">
