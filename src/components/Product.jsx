@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import { Container } from "@mui/system";
+import { FaBeer } from "react-icons/fa";
 
 
 
@@ -34,7 +35,7 @@ function Product({ product, deleteProduct }) {
         <Link href="/products/${product.id}" to ={`/products/${product.id}`}>View</Link>
         </Card.Text>
         
-        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>Edit</Link>
+        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}><FaBeer />Edit</Link>
      
         <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}>Delete</Link>
         </Card.Body>
