@@ -8,15 +8,11 @@ import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit'; */
 import { Link } from 'react-router-dom';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import { Container } from "@mui/system";
-<<<<<<< HEAD
-import { FaBeer } from "react-icons/fa";
-=======
-import { IconName } from "react-icons/bs";
-import FcEmptyTrash "@react-icons/all-files/fa/FcEmptyTrash";
->>>>>>> f496f4628f92300d4476734b0e7bb67cffe89156
+import {BsTrash3} from "react-icons/Bs";
+import {TfiPencilAlt} from "react-icons/Tfi";
+
 
 
 
@@ -35,16 +31,9 @@ function Product({ product, deleteProduct }) {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{price}</Card.Text>
-          <Card.Text>{description}</Card.Text>  
-        </Card.Body>
-        <Card.Body>
-        <Card.Text>
-        
-        </Card.Text>
-        
-        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}><FaBeer />Edit</Link>
-     
-        <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}> <FcEmptyTrash/>? Delete</Link>
+          <Card.Text>{description}</Card.Text>   
+        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}><TfiPencilAlt/></Link>
+        <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}><BsTrash3/></Link>
         </Card.Body>
       </Card>  
      

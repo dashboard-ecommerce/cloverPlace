@@ -23,9 +23,6 @@ function ProductInfo() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Card.Text>
-        <Link href="/products/${product.id}" to ={`/products/${product.id}`}>View</Link>
-        </Card.Text>
         <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>Edit</Link>
         <Card.Link href="#" onClick={() => deleteProduct(id)}>Delete</Card.Link>
         </Card.Footer>

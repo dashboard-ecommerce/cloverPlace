@@ -181,24 +181,25 @@ function CreateProduct() {
         setPrice(priceInput);
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
+
         let newProduct = { title, description, price, image };
-        productHandler.addProduct(newProduct);
-        getProducts();
+        console.log(newProduct)
+        await productHandler.addProduct(newProduct);
+        setTimeout(
+            () => {
+                window.location.href="/products"
+            }
+        ,1000)
 
     };
-    const getProducts = () => {
-        let response = apiClient.get("/products");
-        let allProducts = response.data;
-        return allProducts;
-    }
 
     return (
 
 
         <Container>
-            <Form >
+            <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="title">
                     <Form.Label >Title</Form.Label>
                     <Form.Control type="text" placeholder="Enter title" name="title" /* value={titleInput} */ onChange={handleTitleChange} />
@@ -217,19 +218,13 @@ function CreateProduct() {
                     <Form.Label >Image</Form.Label>
                     <input type="file" /* value={file} */ onChange={handleImageChange} />
                 </Form.Group>"
-               
-                    <Link
-                        className="btn btn-outline-light btn-lg"
-                        role="button"
-                        to="/products"
-                        onClick={handleSubmit}
-                    >submit
 
-                        {/* <Button  variant="primary" type="submit-link" onClick={handleSubmit}  >
-        Upload
-      </Button> */}
-                    </Link>
-                
+               
+
+                    <Button variant="primary" type="submit"  >
+                        Upload
+                    </Button>
+               
             </Form>
         </Container>
     );
