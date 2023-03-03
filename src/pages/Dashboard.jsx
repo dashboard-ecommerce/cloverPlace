@@ -3,6 +3,7 @@ import { useState } from "react";
 import { productHandler } from "../handlers/productHandler";
 import Product from '../components/Product'
 import './Dashboard.css'
+import { Container } from "react-bootstrap";
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -18,6 +19,7 @@ function Dashboard() {
 
     return (
         <>
+        <Container>
          <Row xs={1} md={4} className="g-4">
          
         {productsData.map((product) => (
@@ -27,6 +29,7 @@ function Dashboard() {
         ))}
          
         </Row>
+        </Container>
       </>
     )
 }

@@ -22,7 +22,7 @@ function Product({ product, deleteProduct }) {
     return (
         <Container>
       
-        <Card>
+        <Card >
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
