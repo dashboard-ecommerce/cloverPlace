@@ -149,7 +149,8 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import { productHandler } from '../handlers/productHandler';
 import { Link } from 'react-router-dom';
-import { Container } from '@mui/system';
+import { Container } from 'react-bootstrap';
+
 
 
 function CreateProduct() {
@@ -182,44 +183,59 @@ function CreateProduct() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let newProduct = {title, description, price, image};
+        let newProduct = { title, description, price, image };
         productHandler.addProduct(newProduct);
+        getProducts();
+
     };
+    const getProducts = () => {
+        let response = apiClient.get("/products");
+        let allProducts = response.data;
+        return allProducts;
+    }
 
-  return (
-    
+    return (
 
-    <Container>
-    <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="title">
-        <Form.Label>Title</Form.Label>
-        <Form.Control type="text" placeholder="Enter title" name="title" onChange={handleTitleChange}/>
-       
-      </Form.Group>
 
-      <Form.Group className="mb-3" controlId="description">
-        <Form.Label>Description</Form.Label>
-        <Form.Control type="text" placeholder="Description" name="description" onChange={handleDescriptionChange} />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="price">
-        <Form.Label>price</Form.Label>
-        <Form.Control type="text" placeholder="Price" name="price"  onChange={handlePriceChange}/>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="image">
-      <Form.Label htmlFor="image">Image</Form.Label>
-            <input type="file" onChange={handleImageChange} />
-        </Form.Group>"
-      <Link className="mb-3" to={`/products`}>
-      <Button variant="primary" type="submit">
+        <Container>
+            <Form >
+                <Form.Group className="mb-3" controlId="title">
+                    <Form.Label >Title</Form.Label>
+                    <Form.Control type="text" placeholder="Enter title" name="title" /* value={titleInput} */ onChange={handleTitleChange} />
+
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="description">
+                    <Form.Label >Description</Form.Label>
+                    <Form.Control type="text" placeholder="Description" name="description" /*  value={ descriptionInput} */ onChange={handleDescriptionChange} />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="price">
+                    <Form.Label >price</Form.Label>
+                    <Form.Control type="text" placeholder="Price" name="price"  /* value={priceInput} */ onChange={handlePriceChange} />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="image">
+                    <Form.Label >Image</Form.Label>
+                    <input type="file" /* value={file} */ onChange={handleImageChange} />
+                </Form.Group>"
+               
+                    <Link
+                        className="btn btn-outline-light btn-lg"
+                        role="button"
+                        to="/products"
+                        onClick={handleSubmit}
+                    >submit
+
+                        {/* <Button  variant="primary" type="submit-link" onClick={handleSubmit}  >
         Upload
-      </Button>
-      </Link>
-    </Form>
-    </Container>
-  );
+      </Button> */}
+                    </Link>
+                
+            </Form>
+        </Container>
+    );
 }
 
-export default CreateProduct; 
+export default CreateProduct;
 
 
 
