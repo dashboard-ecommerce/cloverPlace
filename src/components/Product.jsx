@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import { Container } from "@mui/system";
+import { IconName } from "react-icons/bs";
+import FcEmptyTrash "@react-icons/all-files/fa/FcEmptyTrash";
 
 
 
@@ -21,9 +23,11 @@ function Product({ product, deleteProduct }) {
 
     return (
         <Container>
-      
+     
         <Card >
+        <Link className="text-muted" href="/products/${product.id}" to ={`/products/${product.id}`}>
         <Card.Img variant="top" src={image} />
+        </Link>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{price}</Card.Text>
@@ -31,12 +35,12 @@ function Product({ product, deleteProduct }) {
         </Card.Body>
         <Card.Body>
         <Card.Text>
-        <Link href="/products/${product.id}" to ={`/products/${product.id}`}>View</Link>
+        
         </Card.Text>
         
         <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>Edit</Link>
      
-        <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}>Delete</Link>
+        <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}> <FcEmptyTrash/>? Delete</Link>
         </Card.Body>
       </Card>  
      
