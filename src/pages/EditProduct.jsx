@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { productHandler } from "../handlers/productHandler";
+import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
 
 function EditProduct() {
     const { product } = useLoaderData();
@@ -34,26 +39,43 @@ function EditProduct() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let updatedProduct = {title, description, price, image};
+        let updatedProduct = { title, description, price, image };
         productHandler.updateProduct(id, updatedProduct);
+        setTimeout(
+            () => {
+                window.location.href = "/products"
+            }
+            , 1000)
     };
 
     return (
         <>
-            <h1>estás editando el product: {product.title}</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="image">Image</label>
-                <input type="file" onChange={handleImageChange} />
-                <label htmlFor="title">Title</label>
-                <input name="title" type="text" onChange={handleTitleChange} placeholder={product.title} />
-                <label htmlFor="description">Description</label>
-                <input name="description" type="text" onChange={handleDescriptionChange} placeholder={product.description} />
-                <label htmlFor="price">Price</label>
-                <input name="price" type="text" onChange={handlePriceChange} placeholder={product.price}/>
-                <button type="submit">
-                    Upload
-                </button>
-            </form>
+            <Container className="mx-auto">
+                <h1 align="center" style={{ fontSize: '40px', color: "green" }}>
+                    You are editing this Product : {product.title}
+                </h1>
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3" controlId="title">
+                        <Form.Label>Title</Form.Label>
+                        <Form.Control type="text" placeholder={product.title} name="title"  onChange={handleTitleChange} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="description">
+                        <Form.Label >Description</Form.Label>
+                        <Form.Control type="text" placeholder={product.description} name="description"  onChange={handleDescriptionChange} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="price">
+                        <Form.Label >Price</Form.Label>
+                        <Form.Control type="text" placeholder={product.price} name="price"  onChange={handlePriceChange} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="image">
+                        <Form.Label>Image</Form.Label>
+                        <Form.Control type="file" className="my-form-control" onChange={handleImageChange} />
+                    </Form.Group>
+                    <Button variant="success" type="submit"  >
+                        Upload
+                    </Button>
+                </Form>
+            </Container>
         </>
     )
 }

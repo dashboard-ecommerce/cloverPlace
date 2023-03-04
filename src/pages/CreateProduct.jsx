@@ -200,6 +200,9 @@ function CreateProduct() {
 
 
         <Container className="mx-auto">
+            <h1 align="center" style={{ fontSize: '40px', color: "green" }}>
+                    Add New Product
+                </h1>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="title">
                     <Form.Label>Title</Form.Label>
