@@ -13,19 +13,13 @@ function ProductInfo() {
     return (
         <Container>
       
-        <Card>
-        <Card.Img variant="top" src={image} />
+        <Card border="light" className="pt-3">
+        <Card.Img variant="top" src={image} style={{ height: "550px", width:"100%", objectFit: "cover" }} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Card.Text>{price}</Card.Text>
-          <Card.Text>
-            {description}
-          </Card.Text>
+          <Card.Subtitle className="mb-2 text-muted">{price}€</Card.Subtitle>
+          <Card.Text>{description}</Card.Text>         
         </Card.Body>
-        <Card.Footer>
-        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}>Edit</Link>
-        <Card.Link href="#" onClick={() => deleteProduct(id)}>Delete</Card.Link>
-        </Card.Footer>
       </Card>  
      
       </Container>
