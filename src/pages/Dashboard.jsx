@@ -20,10 +20,10 @@ function Dashboard() {
     return (
         <>
         <Container>
-         <Row xs={1} md={4} className="g-4">
+         <Row md={4} className="g-2">
          
         {productsData.map((product) => (
-          <Col  className="g-2">
+          <Col  sm={6} md={4} lg={3}>
             <Product key={product.id} product={product} deleteProduct={deleteProduct} />
           </Col>
         ))}

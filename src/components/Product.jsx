@@ -10,8 +10,9 @@ import EditIcon from '@mui/icons-material/Edit'; */
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import { Container } from "@mui/system";
-import {BsTrash3} from "react-icons/Bs";
-import {TfiPencilAlt} from "react-icons/Tfi";
+import { BsTrash3 } from "react-icons/Bs";
+import { TfiPencilAlt } from "react-icons/Tfi";
+
 
 
 
@@ -23,25 +24,29 @@ function Product({ product, deleteProduct }) {
 
     return (
         <Container>
-     
-        <Card >
-        <Link className="text-muted" href="/products/${product.id}" to ={`/products/${product.id}`}>
-        <Card.Img variant="top" src={image} />
-        </Link>
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{price}</Card.Text>
-          <Card.Text>{description}</Card.Text>   
-          <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}><TfiPencilAlt/></Link>
-        <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}><BsTrash3/></Link>
-        </Card.Body>
-      </Card>  
-     
-      </Container>
+
+            <Card >
+                <Link href="/products/${product.id}" to={`/products/${product.id}`}>
+                    <Card.Img top width="100%"
+                        variant="top"
+                        src={image}
+                        className="img-fluid"
+                        style={{ height: "200px", objectFit: "cover" }} />
+                </Link>
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Subtitle>{price}€</Card.Subtitle>
+                    <Card.Text >{description}</Card.Text>
+                    <Link href="/editProduct/${product.id}" to={`/editProduct/${product.id}`}><TfiPencilAlt /></Link>
+                    <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}><BsTrash3 /></Link>
+                </Card.Body>
+            </Card>
+
+        </Container>
     )
 }
 
-export default Product 
+export default Product
 
 
 
