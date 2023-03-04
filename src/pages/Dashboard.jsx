@@ -2,11 +2,10 @@ import { useLoaderData } from "react-router-dom"
 import { useState } from "react";
 import { productHandler } from "../handlers/productHandler";
 import Product from '../components/Product'
-import './Dashboard.css'
 import { Container } from "react-bootstrap";
-
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import './Dashboard.css'
 
 function Dashboard() {
     const { products } = useLoaderData();
