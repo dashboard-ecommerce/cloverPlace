@@ -32,7 +32,7 @@ function Product({ product, deleteProduct }) {
           <Card.Title>{title}</Card.Title>
           <Card.Text>{price}</Card.Text>
           <Card.Text>{description}</Card.Text>   
-        <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}><TfiPencilAlt/></Link>
+          <Link href="/editProduct/${product.id}"  to ={`/editProduct/${product.id}`}><TfiPencilAlt/></Link>
         <Link href="#" className="link-danger" onClick={() => deleteProduct(id)}><BsTrash3/></Link>
         </Card.Body>
       </Card>  
