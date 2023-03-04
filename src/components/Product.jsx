@@ -10,13 +10,9 @@ import EditIcon from '@mui/icons-material/Edit'; */
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import { Container } from "@mui/system";
-<<<<<<< HEAD
-import { FaBeer } from "react-icons/fa";
-=======
 import {BsTrash3} from "react-icons/Bs";
 import {TfiPencilAlt} from "react-icons/Tfi";
 
->>>>>>> 18bc12088e587bc79bb827a9d947bfd47a2f0e66
 
 
 
