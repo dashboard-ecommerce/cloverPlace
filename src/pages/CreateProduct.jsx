@@ -150,6 +150,7 @@ import { useState } from 'react';
 import { productHandler } from '../handlers/productHandler';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import './CreateProduct.css'
 
 
 
@@ -189,19 +190,19 @@ function CreateProduct() {
         await productHandler.addProduct(newProduct);
         setTimeout(
             () => {
-                window.location.href="/products"
+                window.location.href = "/products"
             }
-        ,1000)
+            , 1000)
 
     };
 
     return (
 
 
-        <Container>
+        <Container className="mx-auto">
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="title">
-                    <Form.Label >Title</Form.Label>
+                    <Form.Label>Title</Form.Label>
                     <Form.Control type="text" placeholder="Enter title" name="title" /* value={titleInput} */ onChange={handleTitleChange} />
 
                 </Form.Group>
@@ -211,20 +212,23 @@ function CreateProduct() {
                     <Form.Control type="text" placeholder="Description" name="description" /*  value={ descriptionInput} */ onChange={handleDescriptionChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="price">
-                    <Form.Label >price</Form.Label>
+                    <Form.Label >Price</Form.Label>
                     <Form.Control type="text" placeholder="Price" name="price"  /* value={priceInput} */ onChange={handlePriceChange} />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="image">
-                    <Form.Label >Image</Form.Label>
-                    <input type="file" /* value={file} */ onChange={handleImageChange} />
+                <Form.Group  className="mb-3"  controlId="image">
+                    <Form.Label>Image</Form.Label>
+                    <Form.Control type="file" className="my-form-control" onChange={handleImageChange}/>
+                    {/* <Form.Label>Image</Form.Label>
+                    <input type="file" className="file-upload" onChange={handleImageChange} custom
+                    /> */}
                 </Form.Group>
 
-               
 
-                    <Button variant="primary" type="submit"  >
-                        Upload
-                    </Button>
-               
+
+                <Button variant="success" type="submit"  >
+                    Upload
+                </Button>
+
             </Form>
         </Container>
     );
