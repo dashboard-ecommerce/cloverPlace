@@ -17,12 +17,14 @@ Table of Contents
 1.General Info
 
 This is a project developed for Bootcamp Factoria F5 / Don Bosco Foundation - Seville.
-A marketplace website for sellers of second-hand products was created. On this website, the vender can advertise the products that want to sell. In the administration page the seller can add, edit, delete and search products.
+A marketplace website for sellers of second-hand products was created. On this website, the vender can advertise the products that want to sell. In the administration page the seller can update, edit, delete and search products.
 
 2.User Story (Vendor)
 
-•	View the app as vendor.
+•	View the app as vendor
+
 •	Access to post (edit, update, delete)
+
 •	View description product
 
 3.Home Page
@@ -68,17 +70,26 @@ $ second terminal: npm run dev
  6.Authors 
  
 http//github.com/magdalenarb - HomePage, Backend, Frontend, Testing
+
 http//github.com/ma-shi22 – Single Product Page, HomePage, Backend, Frontend 
+
 http//github.com/veronicaanais   – Products Section, HomePage, Backend, Frontend
+
 http//github.com/claudettegonzales – Styles, HomePage, Backend, Frontend
 
 7.Tools
 
 •	Agile methodology - Scrum
+
 •	Trello - User Story and tasks
+
 •	Figma
+
 •	GitHub
+
 •	Postman
+
 •	Responsive
+
 •	Visual Studio Code
 
