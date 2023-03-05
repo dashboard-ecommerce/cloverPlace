@@ -11,7 +11,18 @@ function NavBar() {
 
     <Navbar className="navbar--custom" expand="lg" variant='dark'>
       <Container fluid>
-        <Navbar.Brand className="ms-5">  cloverPlace</Navbar.Brand>
+      
+          <Navbar.Brand href="#home">
+            <img
+              src="/cloverplaceOK.png"
+              width="200"
+              height="50"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Navbar.Brand>
+        
+       {/*  <Navbar.Brand className="ms-5">  cloverPlace</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="col justify-content-xl-around">
