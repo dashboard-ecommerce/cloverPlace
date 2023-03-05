@@ -18,7 +18,11 @@ function NavBar() {
             <Nav.Link href="/" >Products</Nav.Link>
             <Nav.Link href="/newProduct">Add Product</Nav.Link>
           </Nav>
+<<<<<<< HEAD
           {/* <Form className="form d-flex me-5 ">
+=======
+         {/*  <Form className="form d-flex me-5 ">
+>>>>>>> feature/test
             <Form.Control
               type="search"
               placeholder="Search..."

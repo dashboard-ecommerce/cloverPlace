@@ -9,7 +9,6 @@ import Container from 'react-bootstrap/Container';
 import  Form  from 'react-bootstrap/Form';
 import  InputGroup  from 'react-bootstrap/InputGroup';
 
-
 function Dashboard() {
     const { products } = useLoaderData();
     const [productsData, setProductsData] = useState(products);
@@ -21,7 +20,7 @@ function Dashboard() {
 
     return (
         <>
-         <Container>
+        <Container>
         <Form>
           <InputGroup className='my-3'>
             <Form.Control
