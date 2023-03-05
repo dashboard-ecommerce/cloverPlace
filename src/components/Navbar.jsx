@@ -18,7 +18,7 @@ function NavBar() {
             <Nav.Link href="/" >Products</Nav.Link>
             <Nav.Link href="/newProduct">Add Product</Nav.Link>
           </Nav>
-          <Form className="form d-flex me-5 ">
+         {/*  <Form className="form d-flex me-5 ">
             <Form.Control
               type="search"
               placeholder="Search..."
@@ -27,7 +27,7 @@ function NavBar() {
               autoComplete="off"
             />
             <Button type="button" className="btn btn-success">Search</Button>
-          </Form>
+          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
