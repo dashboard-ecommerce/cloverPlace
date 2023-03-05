@@ -30,6 +30,4 @@ export const productService = {
         await apiClient.patch("/products/" + id, updatedProduct)
     }
 
-    
-    
 }

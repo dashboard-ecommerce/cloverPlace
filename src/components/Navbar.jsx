@@ -26,6 +26,7 @@ function NavBar() {
               className="me-4 "
               aria-label="Search"
               autoComplete="off"
+              onChange={(e) => setSearch(e.target.value)}
             />
             <Button type="button" className="btn btn-success" /* variant="outline-light" */>Search</Button>
           </Form>
