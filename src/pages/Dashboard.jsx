@@ -1,9 +1,10 @@
 import { useLoaderData } from "react-router-dom"
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { productHandler } from "../handlers/productHandler";
 import Product from '../components/Product'
 import './Dashboard.css'
 import { Container } from "react-bootstrap";
+import { handleSearch} from '../components/Navbar';
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -21,7 +22,7 @@ function Dashboard() {
         <>
         <Container>
          <Row xs={1} md={4} className="g-4">
-         
+    
         {productsData.map((product) => (
           <Col  className="g-2">
             <Product key={product.id} product={product} deleteProduct={deleteProduct} />

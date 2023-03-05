@@ -39,4 +39,7 @@ export const productHandler = {
 
         return productService.updateProduct(id, updatedProductStructure);
     }
+    
 }
+
+
