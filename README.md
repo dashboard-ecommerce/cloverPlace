@@ -17,6 +17,7 @@ Table of Contents
 1.General Info
 
 This is a project developed for Bootcamp Factoria F5 / Don Bosco Foundation - Seville.
+
 A marketplace website for sellers of second-hand products was created. On this website, the vender can advertise the products that want to sell. In the administration page the seller can update, edit, delete and search products.
 
 2.User Story (Vendor)
