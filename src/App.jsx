@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
   let [products, setProducts] = useState([]);
-
+ 
   const fetchProducts = async () => {
     let data = await productHandler.loadProducts();
     setProducts(data);
