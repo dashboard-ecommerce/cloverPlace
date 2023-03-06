@@ -30,7 +30,9 @@ A marketplace website for sellers of second-hand products was created. On this w
 
 3.Home Page
 
-![image](https://user-images.githubusercontent.com/117834971/222983287-6ef9a0c5-b772-495a-bcd9-55815dd6785d.png)
+![image](https://user-images.githubusercontent.com/117834971/223047217-e89b9d79-e9ce-4f2f-b7b7-d97e8b1b2719.png)
+
+
 
 
 
