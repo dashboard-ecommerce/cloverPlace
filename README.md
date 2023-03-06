@@ -14,6 +14,7 @@ Table of Contents
 7.	Tools
 
 
+
 1.General Info
 
 This is a project developed for Bootcamp Factoria F5 / Don Bosco Foundation - Seville.
@@ -44,6 +45,7 @@ A marketplace website for sellers of second-hand products was created. On this w
 
  
  
+ 
 4.Technologies
 
 This project was developed with the following technologies:
@@ -55,6 +57,7 @@ This project was developed with the following technologies:
 ✔️ Bootstramp/CSS 
 ✔️ Axios 
 ✔️ Json-server
+
 
 5.Installation
 
@@ -70,15 +73,17 @@ $ first terminal: json-server --watch ./api/products.json
 
 $ second terminal: npm run dev
 
+
  6.Authors 
  
-http//github.com/magdalenarb - HomePage, Backend, Frontend, Testing
+http//github.com/magdalenarb - HomePage, Frontend, Testing
 
-http//github.com/ma-shi22 – Single Product Page, HomePage, Backend, Frontend 
+http//github.com/ma-shi22 – Single Product Page, HomePage, Frontend 
 
-http//github.com/veronicaanais   – Products Section, HomePage, Backend, Frontend
+http//github.com/veronicaanais   – Products Section, HomePage, Frontend
 
-http//github.com/claudettegonzales – Styles, HomePage, Backend, Frontend
+http//github.com/claudettegonzales – Styles, HomePage, Frontend
+
 
 7.Tools
 
@@ -89,8 +94,6 @@ http//github.com/claudettegonzales – Styles, HomePage, Backend, Frontend
 •	Figma
 
 •	GitHub
-
-•	Postman
 
 •	Responsive
 
